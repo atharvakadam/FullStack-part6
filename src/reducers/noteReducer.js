@@ -21,7 +21,6 @@ const noteReducer = (state = [], action) => {
     return state
 }
 
-
 export const initializeNotes = () => {
     return async dispatch => {
         const notes = await noteService.getAll()
